@@ -1,0 +1,23 @@
+#pokemon-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* background-color: white; */
+    border: 1px solid black;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  #pokemon-box.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .pokemon-box-front,
+  .pokemon-box-back {
+    backface-visibility: hidden;
+  }
+  
+  .pokemon-box-back {
+    transform: rotateY(180deg);
+  }
+  
